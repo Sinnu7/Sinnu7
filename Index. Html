@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sayyid Sinan - Writer, Reader, Scholar</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@600&family=Crimson+Pro:wght@400;600&display=swap');
 
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f9f6f2;
+      font-family: 'Crimson Pro', serif;
+      color: #2d2d2d;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(to right, #d2b48c, #f3efe7);
+      text-align: center;
+      padding: 3rem 1rem;
+      border-bottom: 2px solid #e6dccf;
+    }
+
+    header h1 {
+      font-family: 'Scheherazade New', serif;
+      font-size: 3rem;
+      margin: 0;
+      color: #4a3820;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #5f4c3b;
+    }
+
+    nav {
+      background-color: #eae0d5;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem;
+      border-bottom: 1px solid #d8cfc1;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4e3e2d;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #8b5e3c;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section h2 {
+      font-family: 'Scheherazade New', serif;
+      font-size: 2rem;
+      border-bottom: 1px solid #d8cfc1;
+      padding-bottom: 0.5rem;
+      color: #3a2e1e;
+    }
+
+    .card {
+      background-color: #fffdf9;
+      border: 1px solid #e0d9d0;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    footer {
+      background-color: #d2b48c;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      background-color: #4e3e2d;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #7a5c3d;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sayyid Sinan</h1>
+    <p>Writer • Reader • Islamic Scholar</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#writing">Writings</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="card">
+      <p>Sayyid Sinan is a passionate writer and a devoted reader whose words reflect depth, clarity, and spiritual insight. Rooted in the wisdom of Islamic tradition, he brings timeless values to the modern world through his scholarly reflections and literary contributions.</p>
+      <p>His calm tone, contemplative thoughts, and elegant articulation make his work both uplifting and enlightening. Beyond his writings, Sayyid Sinan is actively involved in guiding students, giving talks, and participating in Islamic discourse.</p>
+    </div>
+  </section>
+
+  <section id="writing">
+    <h2>Writings</h2>
+    <div class="card">
+      <p>Sayyid Sinan writes on topics such as Islamic spirituality, contemporary thought, social ethics, and reflections on classic literature. His essays and short writings often weave together intellect and heart, knowledge and emotion.</p>
+      <p><strong>Notable themes:</strong></p>
+      <ul>
+        <li>Quranic Reflections</li>
+        <li>The Life of the Prophet (ﷺ)</li>
+        <li>Modern Challenges and Traditional Wisdom</li>
+        <li>Islamic Economics and Society</li>
+      </ul>
+      <a href="#" class="btn">Read Selected Works</a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p>Sayyid Sinan completed his graduation in <strong>Economics</strong> from <strong>Calicut University</strong>, Kerala. His academic training is combined with deep traditional Islamic studies, making his perspective well-balanced and holistic.</p>
+      <p>He continues to expand his learning through research, reading classical Islamic texts, and engaging with academic scholarship in both English and Arabic.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>If you wish to invite Sayyid Sinan for a talk, collaboration, or publication, feel free to reach out.</p>
+      <p><strong>Email:</strong> <a href="mailto:sinan@example.com">sinan@example.com</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/" target="_blank">@sayyid_sinan</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sayyid Sinan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Optional scroll effect
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const section = document.querySelector(this.getAttribute('href'));
+        section.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
